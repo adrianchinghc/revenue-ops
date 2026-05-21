@@ -1,9 +1,0 @@
-{
-  "name": "proposal-writer",
-  "description": "Turns rough briefs into persuasive, client-ready proposals using the Problem → Consequence → Solution → Proof → Commitment formula. Works from voice notes, call notes, client emails, or verbal briefs.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Adrian Ching"
-  },
-  "homepage": "https://github.com/adrianchinghc/revenue-ops"
-}

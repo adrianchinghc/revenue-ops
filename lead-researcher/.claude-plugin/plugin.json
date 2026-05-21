@@ -1,9 +1,0 @@
-{
-  "name": "lead-researcher",
-  "description": "Finds target companies, surfaces contact intelligence, and builds a multi-touch outreach sequence. Two modes: research a specific company, or find target companies by industry and location.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Adrian Ching"
-  },
-  "homepage": "https://github.com/adrianchinghc/revenue-ops"
-}

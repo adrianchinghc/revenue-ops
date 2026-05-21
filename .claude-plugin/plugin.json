@@ -1,0 +1,12 @@
+{
+  "name": "revenue-ops",
+  "description": "Four revenue operations skills for Malaysian business owners: lead research, inquiry qualification, proposal writing, and payment chasing.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrian Ching"
+  },
+  "homepage": "https://github.com/adrianchinghc/revenue-ops",
+  "repository": "https://github.com/adrianchinghc/revenue-ops",
+  "license": "MIT",
+  "skills": "./skills"
+}

@@ -4,7 +4,7 @@
 
 Four AI skills that cover your full revenue cycle — from finding prospects to getting paid.
 
-Compatible with **Claude Code** and any Claude Code plugin marketplace.
+Works with **Claude Code**, **OpenAI Codex**, **Cursor**, **Windsurf**, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
 ---
 
@@ -21,38 +21,33 @@ Compatible with **Claude Code** and any Claude Code plugin marketplace.
 
 ## Installation
 
-### Install all four skills (recommended)
-
-```
-/plugin marketplace add adrianchinghc/revenue-ops
-/plugin install lead-researcher@revenue-ops
-/plugin install inquiry-qualifier@revenue-ops
-/plugin install proposal-writer@revenue-ops
-/plugin install payment-chaser@revenue-ops
-```
-
-### Install a single skill
-
-```
-/plugin marketplace add adrianchinghc/revenue-ops
-/plugin install lead-researcher@revenue-ops
-```
-
-Replace `lead-researcher` with any of: `inquiry-qualifier`, `proposal-writer`, `payment-chaser`.
-
-### Test before installing
+### Option 1 — CLI (recommended, works everywhere)
 
 ```bash
-claude --plugin-dir ./lead-researcher
+npx skills add adrianchinghc/revenue-ops
 ```
 
-Clone the repo and run this to try a skill locally without installing it.
+Installs to `.agents/skills/` and symlinks into `.claude/skills/` for Claude Code compatibility.
+
+### Option 2 — Claude Code plugin marketplace
+
+```
+/plugin marketplace add adrianchinghc/revenue-ops
+/plugin install revenue-ops@revenue-ops
+```
+
+### Option 3 — Manual copy
+
+```bash
+git clone https://github.com/adrianchinghc/revenue-ops.git
+cp -r revenue-ops/skills/* ~/.agents/skills/
+```
 
 ---
 
 ## How to Use
 
-Once installed, describe what you need in plain language. Claude Code will automatically activate the right skill.
+Once installed, describe what you need in plain language. Your agent will automatically activate the right skill.
 
 **Examples:**
 
