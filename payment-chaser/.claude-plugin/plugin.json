@@ -1,0 +1,9 @@
+{
+  "name": "payment-chaser",
+  "description": "Diagnoses why an invoice is unpaid and drafts the right follow-up. Produces messages across 5 escalation levels with multi-channel sequences and special templates for disputes and ghost clients.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrian Ching"
+  },
+  "homepage": "https://github.com/adrianchinghc/revenue-ops"
+}

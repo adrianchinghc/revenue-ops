@@ -1,0 +1,30 @@
+{
+  "name": "revenue-ops",
+  "owner": {
+    "name": "Adrian Ching",
+    "email": "adrian@upstackstudio.com"
+  },
+  "description": "The complete revenue operations plugin for Malaysian business owners — four AI skills covering lead research, inquiry qualification, proposal writing, and payment chasing.",
+  "plugins": [
+    {
+      "name": "lead-researcher",
+      "source": "./lead-researcher",
+      "description": "Finds target companies, surfaces contact intelligence, and builds a multi-touch outreach sequence. Two modes: research a specific company, or find target companies by industry and location."
+    },
+    {
+      "name": "inquiry-qualifier",
+      "source": "./inquiry-qualifier",
+      "description": "Scores incoming leads, reads the psychology behind the message, and drafts a response that advances the sale. Works from WhatsApp messages, emails, web form submissions, or any text inquiry."
+    },
+    {
+      "name": "proposal-writer",
+      "source": "./proposal-writer",
+      "description": "Turns rough briefs into persuasive, client-ready proposals using the Problem → Consequence → Solution → Proof → Commitment formula. Works from voice notes, call notes, client emails, or verbal briefs."
+    },
+    {
+      "name": "payment-chaser",
+      "source": "./payment-chaser",
+      "description": "Diagnoses why an invoice is unpaid and drafts the right follow-up. Produces messages across 5 escalation levels with multi-channel sequences and special templates for disputes and ghost clients."
+    }
+  ]
+}

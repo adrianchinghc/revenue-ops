@@ -1,0 +1,9 @@
+{
+  "name": "inquiry-qualifier",
+  "description": "Scores incoming leads, reads the psychology behind the message, and drafts a response that advances the sale. Works from WhatsApp messages, emails, web form submissions, or any text inquiry.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrian Ching"
+  },
+  "homepage": "https://github.com/adrianchinghc/revenue-ops"
+}

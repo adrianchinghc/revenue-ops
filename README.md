@@ -4,7 +4,7 @@
 
 Four AI skills that cover your full revenue cycle — from finding prospects to getting paid.
 
-Compatible with **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and any [Agent Skills](https://agentskills.io)-compatible client.
+Compatible with **Claude Code** and any Claude Code plugin marketplace.
 
 ---
 
@@ -21,53 +21,32 @@ Compatible with **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and any [
 
 ## Installation
 
-### Option 1 — Claude Code (one command, all skills)
+### Install all four skills (recommended)
 
-```bash
-git clone https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
-  cp -r /tmp/revenue-ops/lead-researcher ~/.claude/skills/ && \
-  cp -r /tmp/revenue-ops/inquiry-qualifier ~/.claude/skills/ && \
-  cp -r /tmp/revenue-ops/proposal-writer ~/.claude/skills/ && \
-  cp -r /tmp/revenue-ops/payment-chaser ~/.claude/skills/ && \
-  rm -rf /tmp/revenue-ops
+```
+/plugin marketplace add adrianchinghc/revenue-ops
+/plugin install lead-researcher@revenue-ops
+/plugin install inquiry-qualifier@revenue-ops
+/plugin install proposal-writer@revenue-ops
+/plugin install payment-chaser@revenue-ops
 ```
 
-Skills are now available globally in every Claude Code session.
+### Install a single skill
 
-### Option 2 — Claude Code (project-only install)
-
-Install into a specific project so teammates get the skills automatically when they open the project:
-
-```bash
-mkdir -p .claude/skills
-
-git clone https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
-  cp -r /tmp/revenue-ops/lead-researcher .claude/skills/ && \
-  cp -r /tmp/revenue-ops/inquiry-qualifier .claude/skills/ && \
-  cp -r /tmp/revenue-ops/proposal-writer .claude/skills/ && \
-  cp -r /tmp/revenue-ops/payment-chaser .claude/skills/ && \
-  rm -rf /tmp/revenue-ops
+```
+/plugin marketplace add adrianchinghc/revenue-ops
+/plugin install lead-researcher@revenue-ops
 ```
 
-### Option 3 — Agent Skills CLI
+Replace `lead-researcher` with any of: `inquiry-qualifier`, `proposal-writer`, `payment-chaser`.
+
+### Test before installing
 
 ```bash
-npx skills add https://github.com/adrianchinghc/revenue-ops
+claude --plugin-dir ./lead-researcher
 ```
 
-### Option 4 — Single skill only
-
-```bash
-# Replace SKILL_NAME with: lead-researcher, inquiry-qualifier, proposal-writer, or payment-chaser
-
-# Global install (Claude Code)
-git clone --depth 1 https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
-  cp -r /tmp/revenue-ops/SKILL_NAME ~/.claude/skills/ && \
-  rm -rf /tmp/revenue-ops
-
-# Project install (Claude Code)
-cp -r /tmp/revenue-ops/SKILL_NAME .claude/skills/
-```
+Clone the repo and run this to try a skill locally without installing it.
 
 ---
 
@@ -96,7 +75,7 @@ Two modes:
 
 Includes exact Google search strings, a signal library for identifying pain from job postings and news, and a phone script for follow-ups.
 
-*Requires an agent with web browsing capability (Claude Code with web access, Copilot Agent mode).*
+*Requires an agent with web browsing capability.*
 
 ---
 
@@ -137,18 +116,6 @@ Diagnoses the non-payment situation first (forgetful / cash flow / disputing / a
 - Batch processing for multiple invoices in one go
 
 **Works from:** Single invoice details or a batch list with multiple clients and amounts.
-
----
-
-## Compatibility
-
-| Tool | Supported |
-|---|---|
-| Claude Code | ✅ |
-| OpenAI Codex | ✅ |
-| GitHub Copilot (Agent mode) | ✅ |
-| Cursor | ✅ |
-| Any Agent Skills-compatible client | ✅ |
 
 ---
 
