@@ -114,6 +114,63 @@ Diagnoses the non-payment situation first (forgetful / cash flow / disputing / a
 
 ---
 
+## Demo Script
+
+The examples below use **Upstack Studio** — a Malaysian software agency that builds custom integrations for SMEs — as the sample business. Swap in your own context and the outputs will be tailored accordingly.
+
+### Setup (say this first)
+
+> "I'm Adrian from Upstack Studio. We build custom software and system integrations for Malaysian SMEs. Our target clients are COOs and Operations Directors at manufacturing, logistics, or trading companies doing RM50M+ in revenue. Our typical project is RM80K–RM180K."
+
+---
+
+### 🔍 Lead Researcher
+
+> "Find me 5 manufacturing or logistics companies in Shah Alam or Klang Valley that we can approach about warehouse or operations digitisation. We build custom software and integrations for SMEs — targeting COOs and Operations Directors at companies doing RM50M+ revenue who still run on Excel or disconnected systems."
+
+**What you get:** A prospect table with 5 companies → research card for each (pain signals, who to contact) → a personalised 3-touch outreach sequence per company (Day 1, Day 4–5, Day 10).
+
+---
+
+### 📩 Inquiry Qualifier
+
+> "Got this WhatsApp from a prospect just now — qualify it for me:
+>
+> 'Hi, I got your number from David at AmBank. We're a building materials company, about 300 staff. Been having a lot of problems with our inventory — our guys keep making errors and we lose track of stock across 3 warehouses. A friend said you build custom systems? We've been looking at this for about a year but haven't done anything yet. Budget is flexible if the solution is right. Can we do a call this week?'"
+
+**What you get:** BANT score → psychological read (buying trigger, decision style, hidden signals) → immediate action recommendation → two ready-to-send responses (short WhatsApp + full email) → 3 qualifying questions with reasoning.
+
+---
+
+### 📋 Proposal Writer
+
+> "Write a proposal for Syarikat Bumi Jaya Sdn Bhd — building materials distributor in Shah Alam, 3 warehouses, 200 staff. They track inventory on Excel and want to connect it to SQL Accounting for real-time stock visibility across all 3 locations. Biggest pain: stock discrepancies causing wrong invoicing — they've lost two clients this year because of it. Decision maker is COO Kenny Lim. Timeline is ASAP. Our proposed scope is a 14-week integration project at RM145,000."
+
+**What you get:** Brief analysis (real problem, buying trigger, risk profile) → full 10-section proposal including executive summary (Problem→Consequence→Solution→Proof→Commitment), cost-of-inaction framing, scoped solution with explicit inclusions and exclusions, why-projects-fail risk reversal, and a decision support section so Kenny can get it approved internally.
+
+---
+
+### 💰 Payment Chaser
+
+> "Chase this payment: Client is Mega Steel Trading, Invoice #112, RM78,000 for a completed inventory system we delivered 8 weeks ago. They signed the UAT sign-off. Every time we follow up they say 'it's in finance processing' — but it's been 6 weeks since the 30-day payment term. Last reply from them was 10 days ago. They're still using the system."
+
+**What you get:** Situation diagnosis (avoiding vs cash flow vs disputing) → the right escalation level → WhatsApp message, email, and call script tailored to the situation → next-step trigger (if no response in 5 days, escalate to formal demand).
+
+---
+
+### Demo flow (20 minutes)
+
+| Time | What |
+|------|------|
+| 2 min | Install skills or show already installed |
+| 1 min | Set business context (the Upstack Studio intro above) |
+| 4 min | Lead Researcher — let it search, talk while it runs |
+| 4 min | Inquiry Qualifier — paste the WhatsApp, walk through the output |
+| 5 min | Proposal Writer — paste the brief, scroll through the proposal |
+| 4 min | Payment Chaser — paste the invoice situation, show the diagnosis |
+
+---
+
 ## License
 
 MIT — free to use, modify, and distribute.
