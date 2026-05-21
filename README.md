@@ -1,10 +1,10 @@
 # revenue-ops
 
-> **The complete revenue operations plugin for Malaysian business owners — built by [The Second Team](https://thesecondteam.com)**
+> **The complete revenue operations plugin for Malaysian business owners**
 
 Four AI skills that cover your full revenue cycle — from finding prospects to getting paid.
 
-Compatible with **Claude Cowork**, **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and any [Agent Skills](https://agentskills.io)-compatible client.
+Compatible with **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and any [Agent Skills](https://agentskills.io)-compatible client.
 
 ---
 
@@ -21,48 +21,59 @@ Compatible with **Claude Cowork**, **Claude Code**, **OpenAI Codex**, **GitHub C
 
 ## Installation
 
-### Option 1 — Install all skills at once (recommended)
+### Option 1 — Claude Code (one command, all skills)
 
 ```bash
-npx skills add https://github.com/thesecondteam/revenue-ops
+git clone https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
+  cp -r /tmp/revenue-ops/lead-researcher ~/.claude/skills/ && \
+  cp -r /tmp/revenue-ops/inquiry-qualifier ~/.claude/skills/ && \
+  cp -r /tmp/revenue-ops/proposal-writer ~/.claude/skills/ && \
+  cp -r /tmp/revenue-ops/payment-chaser ~/.claude/skills/ && \
+  rm -rf /tmp/revenue-ops
 ```
 
-### Option 2 — Install a single skill
+Skills are now available globally in every Claude Code session.
+
+### Option 2 — Claude Code (project-only install)
+
+Install into a specific project so teammates get the skills automatically when they open the project:
 
 ```bash
-# Lead Researcher only
-npx skills add https://github.com/thesecondteam/revenue-ops/tree/main/lead-researcher
+mkdir -p .claude/skills
 
-# Inquiry Qualifier only
-npx skills add https://github.com/thesecondteam/revenue-ops/tree/main/inquiry-qualifier
-
-# Proposal Writer only
-npx skills add https://github.com/thesecondteam/revenue-ops/tree/main/proposal-writer
-
-# Payment Chaser only
-npx skills add https://github.com/thesecondteam/revenue-ops/tree/main/payment-chaser
+git clone https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
+  cp -r /tmp/revenue-ops/lead-researcher .claude/skills/ && \
+  cp -r /tmp/revenue-ops/inquiry-qualifier .claude/skills/ && \
+  cp -r /tmp/revenue-ops/proposal-writer .claude/skills/ && \
+  cp -r /tmp/revenue-ops/payment-chaser .claude/skills/ && \
+  rm -rf /tmp/revenue-ops
 ```
 
-### Option 3 — Manual install (Claude Cowork / VS Code / Cursor)
-
-Skills live in `.agents/skills/` in your project root (or your global skills directory).
+### Option 3 — Agent Skills CLI
 
 ```bash
-# Clone the repo
-git clone https://github.com/thesecondteam/revenue-ops.git
+npx skills add https://github.com/adrianchinghc/revenue-ops
+```
 
-# Copy skills into your project
-cp -r revenue-ops/lead-researcher .agents/skills/
-cp -r revenue-ops/inquiry-qualifier .agents/skills/
-cp -r revenue-ops/proposal-writer .agents/skills/
-cp -r revenue-ops/payment-chaser .agents/skills/
+### Option 4 — Single skill only
+
+```bash
+# Replace SKILL_NAME with: lead-researcher, inquiry-qualifier, proposal-writer, or payment-chaser
+
+# Global install (Claude Code)
+git clone --depth 1 https://github.com/adrianchinghc/revenue-ops.git /tmp/revenue-ops && \
+  cp -r /tmp/revenue-ops/SKILL_NAME ~/.claude/skills/ && \
+  rm -rf /tmp/revenue-ops
+
+# Project install (Claude Code)
+cp -r /tmp/revenue-ops/SKILL_NAME .claude/skills/
 ```
 
 ---
 
 ## How to Use
 
-Once installed, your AI agent will automatically activate the right skill based on what you ask. No commands needed — just describe the task naturally.
+Once installed, describe what you need in plain language. Claude Code will automatically activate the right skill.
 
 **Examples:**
 
@@ -85,7 +96,7 @@ Two modes:
 
 Includes exact Google search strings, a signal library for identifying pain from job postings and news, and a phone script for follow-ups.
 
-*Requires an agent with web browsing capability (Claude Cowork, Claude Code with web access).*
+*Requires an agent with web browsing capability (Claude Code with web access, Copilot Agent mode).*
 
 ---
 
@@ -133,21 +144,11 @@ Diagnoses the non-payment situation first (forgetful / cash flow / disputing / a
 
 | Tool | Supported |
 |---|---|
-| Claude Cowork | ✅ |
 | Claude Code | ✅ |
 | OpenAI Codex | ✅ |
 | GitHub Copilot (Agent mode) | ✅ |
 | Cursor | ✅ |
-| OpenClaw | ✅ |
 | Any Agent Skills-compatible client | ✅ |
-
----
-
-## About The Second Team
-
-Built and maintained by [The Second Team](https://thesecondteam.com) — helping Malaysian businesses build their Second Team of AI agents that handle the operational work so their Primary Team can focus on what matters.
-
-**Questions or custom skills?** Reach out at [thesecondteam.com](https://thesecondteam.com)
 
 ---
 
